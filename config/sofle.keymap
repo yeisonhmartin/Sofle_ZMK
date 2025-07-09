@@ -1288,13 +1288,13 @@
 // ------------------------------------------------------------------------------------------------------------
 // |BTCLR| BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |  HUE+| HUE-|  RGB  |BT/USB| SAT+  | SAT- |
 // |BRI+ | INS  | PSCR | MENU  |       |      |                | HUE- | PWRD|   UP  |NWRD  | Dline | BKSP |
-// |BRI- | RGB  |  ←   |   ↓   |   →   |   $  |                |      | LEFT| DOWN  |RIGTH |  DEL   | SPD+ |
+// |BRI- |      |      |       |       |      |                |      | LEFT| DOWN  |RIGTH |  DEL   | SPD+ |
 // |UNDO | CUT  |COPY  | PASTE |  PREV | NEXT |PL/PS |  |      |      | LSRT|       |LEND  |        | SPD- |
 //              |      |       |       |      |      |  |      |  0   |  0  |   0   |   .  |
             bindings = <
 &td_btr         &bt BT_SEL 0    &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4                       &rgb_ug RGB_HUI &rgb_ug RGB_HUD &rgb_ug RGB_TOG &out OUT_TOG &rgb_ug RGB_SAI &rgb_ug RGB_SAD
-&rgb_ug RGB_BRI &kp INS &kp PSCRN &kp APP &trans &trans &rgb_ug RGB_HUD &kp UP &trans &trans &trans &trans
-&rgb_ug RGB_BRD &rgb_ug RGB_TOG &kp LEFT     &kp DOWN      &kp RIGHT    &kp DLLR                        &trans &kp LEFT       &kp DOWN        &kp RIGHT          &kp KP_PLUS  &rgb_ug RGB_SPI
+&rgb_ug RGB_BRI &kp INS &kp PSCRN &trans &trans &trans &rgb_ug RGB_HUD &kp UP &trans &trans &trans &trans
+&rgb_ug RGB_BRD &trans &trans     &trans      &trans    &trans                        &trans &kp LEFT       &kp DOWN        &kp RIGHT          &kp DEL  &rgb_ug RGB_SPI
 &stm            &out OUT_TOG    &trans       &kp C_PREV    &kp C_NEXT   &kp HASH  &kp C_PLAY_PAUSE  &trans &trans &kp N1       &kp N2        &kp N3          &kp KP_ENTER &rgb_ug RGB_SPD
                                 &trans       &trans        &trans       &trans    &trans            &trans &kp N0          &kp N0       &kp N0        &kp DOT 
             >;
